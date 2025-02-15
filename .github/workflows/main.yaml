@@ -1,3 +1,7 @@
+- name: Debug file existence
+  run: ls -lah ~/fastapi-book-project
+
 - name: Install Dependencies
-  run: pip install -r backend/requirements.txt
+  working-directory: ~/fastapi-book-project
+  run: pip install -r req.txt
 
